@@ -1,0 +1,35 @@
+.who {
+    padding: 0 20px;
+    padding-bottom: var(--section-spacing);
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 60px;
+    &-content {
+        width: 100%;
+    }
+    &-heading {
+        max-width: 420px;
+    }
+    &-heading,
+    &-caption,
+    &-text {
+        margin-bottom: 25px;
+    }
+    @media screen and (min-width: 1024px) {
+        &-content {
+            max-width: 500px;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        flex-direction: column-reverse;
+        &-content {
+            text-align: center;
+        }
+        &-heading {
+            max-width: 100%;
+        }
+    }
+}

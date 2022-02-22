@@ -1,0 +1,17 @@
+$gray: #635f85;
+$primary-color: #ff7d00;
+$gray-light: #e7e7e7;
+$gray-dark: #051441;
+$gray-blur: #7f8ea1;
+$gray-blur-dark: #6b7d92;
+$secondary-color: #5a73e5;
+$gray-light-blur: #afaccd;
+:root {
+    --section-spacing: 120px;
+    @media screen and (max-width: 1023px) {
+        --section-spacing: 60px;
+    }
+    @media screen and (max-width: 767px) {
+        --section-spacing: 40px;
+    }
+}
