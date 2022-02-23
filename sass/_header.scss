@@ -39,7 +39,7 @@
     padding-bottom: var(--section-spacing);
     &-auth {
         display: flex;
-        gap: 0 15px;
+        gap: 0 12px;
     }
     &-main {
         display: flex;
@@ -109,6 +109,13 @@
             justify-content: center;
             margin-bottom: 28px;
         }
+        &-image {
+            transform: none;
+        }
+        &-menu-toggle {
+            font-size: 24px;
+            margin-left: 12px;
+        }
     }
     .menu {
         margin-right: 0;
@@ -130,6 +137,9 @@
             display: block;
         }
     }
+    .menu.active {
+        transform: translateX(0);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -137,6 +147,17 @@
         &-actions {
             flex-direction: column;
             gap: 26px;
+        }
+        &-auth {
+            &-signup,
+            &-login {
+                padding: 10px;
+                gap: 0 8px;
+                font-size: 13px;
+            }
+        }
+        &-logo {
+            max-width: 92px;
         }
     }
 }

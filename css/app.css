@@ -182,7 +182,7 @@ body {
 }
 .header-auth {
   display: flex;
-  gap: 0 15px;
+  gap: 0 12px;
 }
 .header-main {
   display: flex;
@@ -247,6 +247,13 @@ body {
     justify-content: center;
     margin-bottom: 28px;
   }
+  .header-image {
+    transform: none;
+  }
+  .header-menu-toggle {
+    font-size: 24px;
+    margin-left: 12px;
+  }
 
   .menu {
     margin-right: 0;
@@ -268,11 +275,23 @@ body {
     padding: 16px;
     display: block;
   }
+
+  .menu.active {
+    transform: translateX(0);
+  }
 }
 @media screen and (max-width: 767px) {
   .header-actions {
     flex-direction: column;
     gap: 26px;
+  }
+  .header-auth-signup, .header-auth-login {
+    padding: 10px;
+    gap: 0 8px;
+    font-size: 13px;
+  }
+  .header-logo {
+    max-width: 92px;
   }
 }
 .brand {
@@ -694,14 +713,15 @@ body {
   display: flex;
 }
 .newsletter-input {
-  padding: 12px 20px;
+  padding: 12px 18px;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   outline: none;
   border: 0;
-  background-color: transparent;
+  background-color: #fff;
+  border-radius: 27px 0 0 27px;
   color: #051441;
 }
 @media screen and (max-width: 1023px) {
@@ -734,6 +754,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+  }
+  .newsletter-input {
+    width: 100%;
+    border-radius: 27px;
+    margin-bottom: 24px;
   }
 }
 

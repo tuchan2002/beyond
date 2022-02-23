@@ -40,14 +40,15 @@
         display: flex;
     }
     &-input {
-        padding: 12px 20px;
+        padding: 12px 18px;
         line-height: 1.5;
         font-size: 16px;
         font-weight: 500;
         font-family: "Poppins", sans-serif;
         outline: none;
         border: 0;
-        background-color: transparent;
+        background-color: #fff;
+        border-radius: 27px 0 0 27px;
         color: $gray-dark;
     }
     @media screen and (max-width: 1023px) {
@@ -80,6 +81,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background-color: transparent;
+        }
+        &-input {
+            width: 100%;
+            border-radius: 27px;
+            margin-bottom: 24px;
         }
     }
 }
