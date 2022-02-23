@@ -1,5 +1,4 @@
 .footer {
-    display: none;
     background-color: #052347;
     &-container {
         max-width: 1166px;
@@ -13,10 +12,6 @@
         grid-template-columns: 1.6fr repeat(3, 1fr);
         gap: 20px;
         border-bottom: 1px solid #11317c;
-    }
-    &-column:first-child {
-        max-width: 235px;
-        width: 100%;
     }
     &-logo {
         margin-bottom: 24px;
@@ -51,7 +46,7 @@
         gap: 0 12px;
     }
     &-social-link {
-        background-color: #049EFF;
+        background-color: #049eff;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,5 +55,28 @@
         border-radius: 30px;
         color: #fff;
         font-size: 18px;
+    }
+    @media screen and (min-width: 1024px) {
+        &-column:first-child {
+            max-width: 235px;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        &-main {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 16px;
+        }
+        &-column {
+            text-align: center;
+        }
+        &-social {
+            justify-content: center;
+        }
+        &-logo {
+            img {
+                margin: 0 auto;
+            }
+        }
     }
 }
